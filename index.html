@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurangbokning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurangbokning</h1>
+        <form action="/book_table" method="post">
+            <label for="restaurant">Restaurang</label>
+            <select name="restaurant">
+                <option value="1">Restaurang 1</option>
+                <option value="2">Restaurang 2</option>
+                <option value="3">Restaurang 3</option>
+            </select>
+            <label for="date">Datum</label>
+            <input type="date" name="date">
+            <label for="time">Tid</label>
+            <input type="time" name="time">
+            <label for="number_of_guests">Antal gäster</label>
+            <input type="number" name="number_of_guests">
+            <label for="name">Namn</label>
+            <input type="text" name="name">
+            <label for="email">E-post</label>
+            <input type="email" name="email">
+            <label for="phone_number">Telefonnummer</label>
+            <input type="tel" name="phone_number">
+            <input type="submit" value="Boka bord">
+        </form>
+    </div>
+</body>
+</html>
