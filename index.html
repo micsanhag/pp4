@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Restaurant Reservation/title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="container">
@@ -28,9 +28,10 @@
             <label for="phone_number">Telefonnummer</label>
             <input type="tel" name="phone_number">
             <input type="submit" value="Boka bord">
+            <a href="{% url 'cancel_booking' booking.id %}">Avboka</a>
         </form>
     </div>
-    <a href="{% url 'cancel_booking' booking.id %}">Avboka</a>
+    
 
 </body>
 </html>
